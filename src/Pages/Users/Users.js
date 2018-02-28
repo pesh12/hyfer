@@ -20,6 +20,7 @@ export default class Users extends React.Component {
     });
   };
 
+  
   componentWillUnmount() {
     this.subscription.remove();
   }

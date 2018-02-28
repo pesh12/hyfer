@@ -15,6 +15,7 @@ export default class Profile extends React.Component {
   componentWillUnmount() {
     this.subscription.remove();
   }
+  
 
   saveProfile = () => {
 
