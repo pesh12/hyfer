@@ -1,6 +1,7 @@
 import React from 'react';
 import store from '../../store/UserStore';
 import styles from '../../assets/styles/profile.css';
+import { Link } from 'react-router-dom';
 
 
 export default class Profile extends React.Component {
@@ -99,14 +100,15 @@ export default class Profile extends React.Component {
                      placeholder="Mobile" 
                      onChange={(e)=> {store.setState({mobile: e.target.value});
                      }}/>
-
-              <input className={styles.saveProfile} 
-                     type="submit" 
-                     value="Save" 
-                     onClick={this.saveProfile}
-                     />
+              <Link to='/users'>
+                <input className={styles.saveProfile} 
+                  type="submit" 
+                  value="Save" 
+                  onClick={this.saveProfile}
+                />
+              </Link>       
               <input className={styles.resetProfile} 
-                     type="submit" 
+                     type="reset" 
                      value="Reset" 
                      />            
             </div>
