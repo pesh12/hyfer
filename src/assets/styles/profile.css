@@ -66,10 +66,9 @@ html {
   -webkit-transition: background .3s;
 }
 
-.profilePage input[type="submit"]:hover {
+.saveProfile:hover {
   background: #22bb74;
 }
-
 
 .resetProfile{
   width: 100%;
