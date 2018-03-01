@@ -3,7 +3,6 @@ import store from '../../store/UserStore';
 import styles from '../../assets/styles/profile.css';
 import { Link } from 'react-router-dom';
 
-
 export default class Profile extends React.Component {
 
   componentWillMount = () => {
